@@ -17,6 +17,17 @@ before_script:
 
 script: ./gradlew connectedAndroidTest
 
+deploy:
+  provider: releases
+  user: "792626757@qq.com"
+  password: "tc3141526github"
+  file:
+    - "build/apk/android-tdd-playground-debug-test-unaligned.apk"
+    - "build/apk/android-tdd-playground-debug-unaligned.apk"
+  skip_cleanup: true
+  on:
+    tags: true
+
 after_success:
   - cd build
   - tree
