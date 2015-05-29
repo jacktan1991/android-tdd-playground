@@ -19,4 +19,6 @@ script: ./gradlew connectedAndroidTest
 
 after_success:
   - cd build
-  - ls -al
+  - tree
+  - cd apk
+  - ls
