@@ -19,8 +19,7 @@ script: ./gradlew connectedAndroidTest
 
 deploy:
   provider: releases
-  user: "792626757@qq.com"
-  password: "tc3141526github"
+  api_key: "32e890ee1d30c959cb05bd6369a006b003970b7e"
   file:
     - "build/apk/android-tdd-playground-debug-test-unaligned.apk"
     - "build/apk/android-tdd-playground-debug-unaligned.apk"
