@@ -17,6 +17,9 @@ deploy:
   provider: releases
   api_key:
     secure: oePU2yj71HgHhVuyDyfKE/iBRF/WQcxAUblFLuRr0z2IZ6MlAzDoXQ49o872kmHnJxn4dtiHi5AgDAYfR9uBQNjEYmG6fG8Os1Vpnn9U0DAmeF4DYppDINvYj5bKiUyelKGP5ZztCYZ4Y79anAmozXJSGALg4xhNX1iRRAE1SeIed1XD1aoK1pQkiNxox62fJ4igLNtcX6xnTd2rZKSwoU94OV6GmyLZkTiUUc+7zVDa019PqF9X6miXtowYuuABpGt+k27/ShvQJthwPBNhhvYyWD62mupGBe+1nIAuj4jZ+isv9zgXlPbSJCFyTZL+BF4cqLgB/dK7FmbgGu2VfitXIzoiDvud9zcmYbWnMt8CzubkdgVFjQB09M/zV4oeC64vYgVRUSgf7+9g6c3X4+pY39fjV15mo46Px+5gMT3hTeJvjSMa7aWrsUxHtUvR6iSzeHAO3zNTFZPrGvJJlyYBsasrS8SJgbDjKWwK9/9Nk1cPgtlny8G4Ypjjf4yi60OdFl4WJWf+L+oaXjVw5B2vc1d6rZWfht/Odmp9mdBnbwwLyDqGXv/KTLK6KZ4UIrHzgQ3WoOo1QZ0fkp826k3Cv3kHPXyz+q3y//PZsgiHT0HjfjR4rHkengycALH3vk7rdDxs4U1dhSF2t9jiyGvSJmwdv2WQY3PN/E8y7kQ=
-  file: build/apk/android-tdd-playground-debug-unaligned.apk
+  file: 
+    - "build/apk/android-tdd-playground-debug-unaligned.apk"
+    - "build/apk/android-tdd-playground-debug-test-unaligned.apk"
+  skip_cleanup: true
   on:
-    repo: jacktan1991/android-tdd-playground
+    tags: true
